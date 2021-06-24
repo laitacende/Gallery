@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Zad2</string>
+    <string name="save_rating">Save rating</string>
+    <string name="edit_description">Edit description</string>
+    <string name="mes_edit">Edit description</string>
+    <string name="ok">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="take"> </string>
+</resources>

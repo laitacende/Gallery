@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="50dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:fontFamily="sans-serif-light"
+                    android:justificationMode="inter_word"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus, nisl eget blandit tempor, enim nulla sagittis nisl, a lobortis nibh magna sit amet urna. Maecenas vulputate elit sed lorem sollicitudin tempus. Nunc dolor sapien, imperdiet vel justo vitae, ultrices ullamcorper est. Nunc pulvinar, augue sed pharetra lacinia, felis nulla eleifend purus, in egestas tellus ligula eget lorem. Duis quis libero vitae quam euismod vulputate id et risus. Proin porttitor a metus in vehicula. Nullam at erat arcu. Mauris ultrices risus a dolor pretium, ut consectetur risus congue. Nam porttitor lorem ut mi eleifend, eu vehicula lectus cursus. Duis varius aliquam ex porta iaculis. Integer semper ornare metus vitae rhoncus. Aliquam aliquet, sapien eu malesuada tempor, arcu nunc feugiat erat, sed vulputate turpis diam sit amet dui. Curabitur gravida dui non ligula gravida, sed mollis orci volutpat. Curabitur egestas tincidunt lectus et vulputate.
+
+        Vestibulum volutpat dictum elit a ultrices. Donec nec purus est. Cras metus lacus, laoreet eu malesuada nec, facilisis quis nibh. Proin ullamcorper blandit nisl, et pulvinar dui aliquam in. Proin urna nulla, imperdiet ut luctus in, fringilla sit amet lacus. Vestibulum felis risus, aliquam at est iaculis, tempus pharetra elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus odio erat, consectetur vitae dui et, finibus pulvinar erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim, purus a accumsan dictum, metus ante egestas augue, ut luctus orci dolor eu augue. Ut porta bibendum velit at finibus. Duis libero diam, laoreet vitae lorem ut, rhoncus molestie purus. Morbi dignissim consectetur mauris porta dictum. Aenean ac erat non mi auctor aliquam id a odio. Proin suscipit mollis erat, sed luctus ante aliquam sit amet. In hac habitasse platea dictumst. Nunc accumsan fringilla dolor, a egestas sapien. Proin scelerisque augue vitae porttitor bibendum. Nullam rutrum mi eu vestibulum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque vel dolor non nisl semper gravida rhoncus eu arcu. Sed ultrices sed lorem et tempus."
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <RatingBar
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:text="@string/edit_description"
+                        android:textColor="@drawable/button" />
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:text="@string/save_rating"
+                        android:textColor="@drawable/button" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
